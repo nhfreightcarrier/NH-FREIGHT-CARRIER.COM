@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NH Freight Carrier | Transport & Local Truck Services</title>
+<style>
+:root{--navy:#07152d;--blue:#0b63ce;--red:#e63946;--gold:#ffb703;--light:#f5f8fc;--text:#172033}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:white}
+a{text-decoration:none;color:inherit}.top{background:var(--navy);color:#fff;padding:9px 6%;display:flex;justify-content:space-between;font-size:13px}
+nav{position:sticky;top:0;z-index:10;background:#fff;box-shadow:0 3px 18px #00000012;padding:16px 6%;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:900;font-size:22px;color:var(--navy);letter-spacing:.5px}.logo span{color:var(--red)}
+nav .links{display:flex;gap:26px;font-weight:700;font-size:14px} .btn{background:var(--red);color:#fff;padding:12px 18px;border-radius:8px;font-weight:800}
+.hero{background:linear-gradient(100deg,#06142d 0%,#0b2f60 55%,#0b63ce 100%);color:#fff;padding:78px 6% 85px;position:relative;overflow:hidden}
+.hero:after{content:"TRUCK";position:absolute;right:-40px;bottom:-55px;font-size:180px;font-weight:900;color:#ffffff0b}
+.hero-inner{max-width:1180px;margin:auto;position:relative;z-index:1}.tag{display:inline-block;background:#ffb703;color:#111;padding:8px 12px;border-radius:20px;font-size:12px;font-weight:900}
+h1{font-size:clamp(42px,6vw,72px);line-height:.98;margin:20px 0 18px;max-width:780px}.hero p{font-size:18px;line-height:1.65;max-width:650px;color:#e5edf8}
+.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn2{padding:13px 19px;border:1px solid #ffffff55;border-radius:8px;font-weight:800}.btn2:hover{background:#fff;color:var(--navy)}
+.section{padding:70px 6%}.wrap{max-width:1180px;margin:auto}.eyebrow{color:var(--blue);font-weight:900;font-size:13px;text-transform:uppercase;letter-spacing:1.5px}.title{font-size:38px;margin:8px 0 12px;color:var(--navy)}.sub{color:#667085;line-height:1.7;max-width:700px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:34px}.card{background:#fff;border:1px solid #e6ebf2;border-radius:14px;padding:27px;box-shadow:0 10px 30px #0b1b3d08}.icon{width:48px;height:48px;border-radius:12px;background:#eaf3ff;display:grid;place-items:center;font-size:23px;margin-bottom:17px}.card h3{margin:0 0 9px;color:var(--navy)}.card p{margin:0;color:#667085;line-height:1.6}
+.band{background:var(--light)}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:35px}.stat{background:#fff;border-radius:12px;padding:25px;text-align:center;border:1px solid #e7edf5}.stat b{display:block;font-size:32px;color:var(--blue)}.stat span{font-size:13px;color:#667085}
+.cover{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}.route{background:linear-gradient(145deg,#07152d,#103b77);border-radius:18px;padding:30px;color:#fff;min-height:280px;display:flex;flex-direction:column;justify-content:center}.route strong{font-size:24px}.route .line{height:4px;background:linear-gradient(90deg,var(--red),var(--gold));margin:25px 0;border-radius:4px}
+.contact{background:var(--navy);color:#fff}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}.contact .title{color:#fff}.contact p{color:#cbd5e1}.contact-box{background:#ffffff0d;border:1px solid #ffffff1c;border-radius:15px;padding:25px}.contact-row{padding:14px 0;border-bottom:1px solid #ffffff18}.contact-row:last-child{border:0}.contact-row small{display:block;color:#94a3b8;margin-bottom:4px}
+footer{background:#040d1d;color:#9aa8bd;padding:22px 6%;font-size:13px;text-align:center}
+@media(max-width:800px){.top{display:none}nav .links{display:none}.cards,.stats,.cover,.contact-grid{grid-template-columns:1fr}h1{font-size:46px}.section{padding:55px 5%}}
+
+.fleet{background:#f5f8fc}.fleet-head{display:flex;justify-content:space-between;gap:20px;align-items:end;flex-wrap:wrap}
+.truck-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:34px}
+.truck-card{background:#fff;border:1px solid #e4eaf2;border-radius:16px;overflow:hidden;box-shadow:0 12px 35px #0b1b3d0b;transition:.25s}
+.truck-card:hover{transform:translateY(-5px);box-shadow:0 18px 40px #0b1b3d18}
+.truck-photo{height:175px;background:linear-gradient(135deg,#06142d,#1455a0);position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.truck-photo:before{content:"🚛";font-size:100px;filter:drop-shadow(0 12px 10px #0006);transform:translateY(4px)}
+.truck-photo:after{content:"";position:absolute;width:75%;height:5px;bottom:23px;background:linear-gradient(90deg,#e63946,#ffb703,#0b63ce);border-radius:10px}
+.truck-info{padding:18px}.truck-no{font-size:20px;font-weight:900;color:#07152d;letter-spacing:.6px}
+.truck-type{font-size:12px;color:#718096;margin-top:5px}.fleet-note{margin-top:25px;padding:14px 17px;border-left:4px solid #e63946;background:#fff;border-radius:8px;color:#667085}
+@media(max-width:800px){.truck-grid{grid-template-columns:1fr}}
+
+</style>
+</head>
+<body>
+<div class="top"><span>Transport • Local Truck Service • West Bengal</span><span>Call: 9883056913</span></div>
+<nav>
+  <div class="logo">NH <span>FREIGHT CARRIER</span></div>
+  <div class="links"><a href="#services">Services</a><a href="#coverage">Coverage</a><a href="#fleet">Our Fleet</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+  <a class="btn" href="tel:9883056913">Call Now</a>
+</nav>
+
+<section class="hero">
+<div class="hero-inner">
+  <span class="tag">TRUSTED LOCAL TRANSPORT</span>
+  <h1>Reliable Truck Transport Across West Bengal.</h1>
+  <p>NH FREIGHT CARRIER provides dependable local truck and freight transportation services for businesses, vendors and regular commercial movement across West Bengal.</p>
+  <div class="hero-buttons"><a class="btn" href="tel:9883056913">📞 9883056913</a><a class="btn2" href="#contact">Get Transport Support →</a></div>
+</div>
+</section>
+
+<section class="section" id="services">
+<div class="wrap">
+  <div class="eyebrow">What We Do</div><h2 class="title">Transport Solutions That Keep Business Moving</h2>
+  <p class="sub">Professional local truck movement designed for vendors, businesses and day-to-day freight requirements.</p>
+  <div class="cards">
+    <div class="card"><div class="icon">🚛</div><h3>Local Truck Transport</h3><p>Regular local truck movement for commercial goods and vendor requirements.</p></div>
+    <div class="card"><div class="icon">📦</div><h3>Freight Movement</h3><p>Safe and practical transportation support for goods moving between business locations.</p></div>
+    <div class="card"><div class="icon">📍</div><h3>West Bengal Coverage</h3><p>Local transport service focused on routes and destinations across West Bengal.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="section band" id="about">
+<div class="wrap">
+  <div class="eyebrow">Why NH Freight Carrier</div><h2 class="title">A Simple, Reliable Transport Partner</h2>
+  <p class="sub">Built for businesses that need dependable truck availability, practical communication and local route experience.</p>
+  <div class="stats"><div class="stat"><b>WB</b><span>West Bengal Focus</span></div><div class="stat"><b>24/7</b><span>Transport Enquiry</span></div><div class="stat"><b>LOCAL</b><span>Truck Movement</span></div><div class="stat"><b>NH</b><span>Freight Carrier</span></div></div>
+</div>
+</section>
+
+
+<section class="section fleet" id="fleet">
+<div class="wrap">
+  <div class="fleet-head">
+    <div><div class="eyebrow">Our Fleet</div><h2 class="title">Our Trucks</h2>
+    <p class="sub">Our vehicle fleet is ready for local freight and vendor transport requirements across West Bengal.</p></div>
+    <a class="btn" href="tel:9883056913">🚛 Enquire Now</a>
+  </div>
+  <div class="truck-grid"><div class="truck-card"><div class="truck-photo"></div><div class="truck-info"><div class="truck-no">NL-04D-9058</div><div class="truck-type">NH FREIGHT CARRIER • Local Transport</div></div></div>
+<div class="truck-card"><div class="truck-photo"></div><div class="truck-info"><div class="truck-no">NL-04D-9059</div><div class="truck-type">NH FREIGHT CARRIER • Local Transport</div></div></div>
+<div class="truck-card"><div class="truck-photo"></div><div class="truck-info"><div class="truck-no">NL-04D-9061</div><div class="truck-type">NH FREIGHT CARRIER • Local Transport</div></div></div>
+<div class="truck-card"><div class="truck-photo"></div><div class="truck-info"><div class="truck-no">NL-04D-9062</div><div class="truck-type">NH FREIGHT CARRIER • Local Transport</div></div></div>
+<div class="truck-card"><div class="truck-photo"></div><div class="truck-info"><div class="truck-no">NL-01-AC-6833</div><div class="truck-type">NH FREIGHT CARRIER • Local Transport</div></div></div>
+<div class="truck-card"><div class="truck-photo"></div><div class="truck-info"><div class="truck-no">NL-01-AC-6835</div><div class="truck-type">NH FREIGHT CARRIER • Local Transport</div></div></div>
+<div class="truck-card"><div class="truck-photo"></div><div class="truck-info"><div class="truck-no">NL-04D-9774</div><div class="truck-type">NH FREIGHT CARRIER • Local Transport</div></div></div>
+<div class="truck-card"><div class="truck-photo"></div><div class="truck-info"><div class="truck-no">NL-01-AD-2317</div><div class="truck-type">NH FREIGHT CARRIER • Local Transport</div></div></div>
+<div class="truck-card"><div class="truck-photo"></div><div class="truck-info"><div class="truck-no">WB-23C-2275</div><div class="truck-type">NH FREIGHT CARRIER • Local Transport</div></div></div>
+<div class="truck-card"><div class="truck-photo"></div><div class="truck-info"><div class="truck-no">WB-23C-2342</div><div class="truck-type">NH FREIGHT CARRIER • Local Transport</div></div></div>
+<div class="truck-card"><div class="truck-photo"></div><div class="truck-info"><div class="truck-no">WB-23D-0546</div><div class="truck-type">NH FREIGHT CARRIER • Local Transport</div></div></div>
+<div class="truck-card"><div class="truck-photo"></div><div class="truck-info"><div class="truck-no">WB-23D-5216</div><div class="truck-type">NH FREIGHT CARRIER • Local Transport</div></div></div>
+<div class="truck-card"><div class="truck-photo"></div><div class="truck-info"><div class="truck-no">WB-03C-9651</div><div class="truck-type">NH FREIGHT CARRIER • Local Transport</div></div></div>
+<div class="truck-card"><div class="truck-photo"></div><div class="truck-info"><div class="truck-no">WB-03D-0472</div><div class="truck-type">NH FREIGHT CARRIER • Local Transport</div></div></div>
+<div class="truck-card"><div class="truck-photo"></div><div class="truck-info"><div class="truck-no">WB-11C-6179</div><div class="truck-type">NH FREIGHT CARRIER • Local Transport</div></div></div>
+<div class="truck-card"><div class="truck-photo"></div><div class="truck-info"><div class="truck-no">WB-11C-7542</div><div class="truck-type">NH FREIGHT CARRIER • Local Transport</div></div></div>
+<div class="truck-card"><div class="truck-photo"></div><div class="truck-info"><div class="truck-no">WB-11C-7545</div><div class="truck-type">NH FREIGHT CARRIER • Local Transport</div></div></div>
+<div class="truck-card"><div class="truck-photo"></div><div class="truck-info"><div class="truck-no">WB-91-7148</div><div class="truck-type">NH FREIGHT CARRIER • Local Transport</div></div></div>
+<div class="truck-card"><div class="truck-photo"></div><div class="truck-info"><div class="truck-no">WB-06W-8458</div><div class="truck-type">NH FREIGHT CARRIER • Local Transport</div></div></div></div>
+  <div class="fleet-note"><b>19 Vehicles Listed</b> — Vehicle numbers shown for NH FREIGHT CARRIER fleet identification.</div>
+</div>
+</section>
+
+<section class="section" id="coverage">
+<div class="wrap cover">
+  <div><div class="eyebrow">Service Area</div><h2 class="title">Local Routes. Business-Friendly Service.</h2><p class="sub">Serving local commercial transport requirements in West Bengal, with our base at Durgapur Expressway, Monoharpur, Gobra, Dankuni.</p><a class="btn" href="tel:9883056913">Check Truck Availability</a></div>
+  <div class="route"><strong>NH FREIGHT CARRIER</strong><div class="line"></div><div>Dankuni → West Bengal Local Routes</div><div style="margin-top:10px;color:#b9c7da">Truck • Freight • Vendor Transport</div></div>
+</div>
+</section>
+
+<section class="section contact" id="contact">
+<div class="wrap contact-grid">
+  <div><div class="eyebrow">Contact Us</div><h2 class="title">Need a Local Truck?</h2><p>Call NH FREIGHT CARRIER for transport requirements, truck availability and local freight movement.</p><a class="btn" href="tel:9883056913">Call 9883056913</a></div>
+  <div class="contact-box">
+    <div class="contact-row"><small>Company</small><b>NH FREIGHT CARRIER</b></div>
+    <div class="contact-row"><small>Address</small><b>Durgapur Expressway, Monoharpur, Gobra, Dankuni, West Bengal, 712311</b></div>
+    <div class="contact-row"><small>Mobile</small><b>9883056913</b></div>
+  </div>
+</div>
+</section>
+<footer>© 2026 NH FREIGHT CARRIER • Transport & Local Truck Services • West Bengal</footer>
+</body>
+</html>
